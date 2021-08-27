@@ -1,7 +1,7 @@
-const categories = document.querySelector(`#categories`)
-console.log(`В списке ${categories.children.length} категории`)
+const ulItem = document.querySelector('#categories')
+console.log(`В списке ${ulItem.children.length} категории`)
 
-for (let child of categories.children) {
-  console.log('Категория: ', child.firstElementChild.innerHTML)
-  console.log('Количество элементов: ', child.lastElementChild.children.length)
+for (let item of ulItem.children) {
+  console.log('Категория: ', item.firstElementChild.innerHTML)
+  console.log('Количество элементов: ', item.lastElementChild.children.length)
 }
